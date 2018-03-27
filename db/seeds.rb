@@ -27,7 +27,7 @@ User.create!([{name: Faker::GameOfThrones.character, password: 'qweqwe123',
 puts '-----------------------------------------------------------------------------------'
 puts '=> creating items'
 40.times.each do |i|
-  Item.create!(name: Faker::StarWars.vehicle, description: Faker::StarWars.quote, price: 10.99, quantity: i * 1.3)
+  Item.create!(name: Faker::StarWars.vehicle, description: Faker::StarWars.quote, price: i * 5.7, quantity: i * 1.3)
 end
 puts "#{Item.count} items created."
 puts '---------------------------------------------------------------------'

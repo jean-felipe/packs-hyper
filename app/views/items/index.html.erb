@@ -1,0 +1,16 @@
+<ul>
+  <li>Total de Items: <%= @items.count %></li>
+<%= @items.each do |item| %>
+-------------------------------------------------------------
+  <li>name: <%= item.name %></li>
+  <li>description: <%= item.description %></li>
+  <li>price: <%= item.price %></li>
+  <li>max_price: <%= item.max_price %></li>
+  <li>min_price: <%= item.min_price %></li>
+  <li>quantity: <%= item.quantity %></li>
+  <li>best_period: <%= item.best_period %></li>
+  <li>status: <%= item.status %></li>
+  <li>created_at: <%= item.created_at %></li>
+  -------------------------------------------------------------
+<% end %>
+</ul>
